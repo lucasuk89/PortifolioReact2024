@@ -208,15 +208,6 @@ h3{
     color: var(--primary);
 }
 
-
-
-
-
-
-
-
-
-
 /* Hero Section Style */
 
 .hero--section{
@@ -314,3 +305,28 @@ h3{
 .skills--section--description{
     color: var(--darkblue);
 }
+.skills--section--img{
+    display: flex;
+    padding: 13.3px;
+    justify-content: center;
+    align-items: center;
+    gap: 13.3px;
+    border-radius: 10.6px;
+    background:#fff;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+}
+.skills--section--card--content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.skills--section--title{
+    color:var(--heading-color);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+}
+/*Skills Style ends*/
