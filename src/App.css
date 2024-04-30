@@ -329,4 +329,11 @@ h3{
     font-weight: 700;
     line-height: 45px;
 }
+
+.skills--section--description{
+    color:var(--black);
+    font-size: 21.3px;
+    font-weight: 400;
+    line-height: 32px;
+}
 /*Skills Style ends*/
