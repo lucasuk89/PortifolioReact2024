@@ -353,3 +353,72 @@ h3{
 /*About us Ends*/
 
 /*My Portfolio Starts*/
+.portfolio--section{
+    display: flex;
+    padding: 112px 85px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+}
+.portfolio--container-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.portfolio--container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21.3px;
+}
+.portfolio--section--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42.6px;
+    width: 100%;
+}
+.portfolio--section--img{
+    border-radius: 8px;
+    width: 100%;
+}
+.portfolio--section--img > img{
+    width: 100%;
+}
+.portfolio--section--card{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+    background: #FFF;
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.portfolio--section--card--content{
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+.portfolio--section--title{
+    color: var(--heading-color);
+}
+.portfolio--link{
+    text-decoration: none;
+    display: flex;
+    gap: 16px;
+    border-bottom: 1.33px solid var(--primary);
+    padding-bottom: 10.6px;
+    font-weight: 600;
+}
+
+.portfolio--section--card:hover path{
+    stroke:#006b6a ;
+}
+/*Portfolio Ends*/
