@@ -18,6 +18,7 @@ function Navbar() {
         closeMenu;
       }
     };
+
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -34,15 +35,15 @@ function Navbar() {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div>
-        <img src="./img/logo.svg" alt="Logoipsum" />
+        <img src="img/Lucasdev.png" alt="Logoipsum" />
       </div>
       <a
-        className={`nav__hamburguer ${navActive ? "active" : ""}`}
+        className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={toggleNav}
       >
-        <span className="nav__hamburguer__line"></span>
-        <span className="nav__hamburguer__line"></span>
-        <span className="nav__hamburguer__line"></span>
+        <span className="nav__hamburger__line"></span>
+        <span className="nav__hamburger__line"></span>
+        <span className="nav__hamburger__line"></span>
       </a>
       <div className={`navbar--items ${navActive ? "active" : ""}`}>
         <ul>
@@ -55,12 +56,11 @@ function Navbar() {
               offset={-70}
               duration={500}
               to="heroSection"
-              className="navbar-content"
+              className="navbar--content"
             >
               Home
             </Link>
           </li>
-
           <li>
             <Link
               onClick={closeMenu}
@@ -70,12 +70,11 @@ function Navbar() {
               offset={-70}
               duration={500}
               to="MyPortfolio"
-              className="navbar-content"
+              className="navbar--content"
             >
               Portfolio
             </Link>
           </li>
-
           <li>
             <Link
               onClick={closeMenu}
@@ -85,12 +84,11 @@ function Navbar() {
               offset={-70}
               duration={500}
               to="AboutMe"
-              className="navbar-content"
+              className="navbar--content"
             >
               About Me
             </Link>
           </li>
-
           <li>
             <Link
               onClick={closeMenu}
@@ -99,8 +97,8 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="Testimonials"
-              className="navbar-content"
+              to="testimonial"
+              className="navbar--content"
             >
               Testimonials
             </Link>

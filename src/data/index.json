@@ -4,21 +4,21 @@
             "id":1,
             "src":"./img/product-chain-1.png",
             "title":"Front-End",
-            "description":"Lorem ipsum, dolorconceateryeauhuas steste"
+            "description":"Translation of UI/UX designs into code using HTML, CSS, and JavaScript/React."
         },
 
         {
             "id":2,
             "src":"./img/tag-1.png",
             "title":"Back-End",
-            "description":"Lorem ipsum, dolorconceateryeauhuas steste"
+            "description":"Develop and maintain web applications using Node.js and Express.js."
         },
 
         {
             "id":3,
             "src":"./img/feather-pen-2.png",
             "title":"Ux & UI Design",
-            "description":"Lorem ipsum, dolorconceateryeauhuas steste"
+            "description":"Designing and implementing user-friendly interfaces, collaborating with developers."
         },
 
         {
