@@ -32,18 +32,20 @@
     "portfolio":[
         {
             "id":1,
-            "src":"./img/placeholder-image.png",
-            "title":"ahuse",
+            "src":"./img/restaurant.png",
+            "title":"Restaurant Gerich",
             "description":"Lorem ipsum, dolorconceateryeauhuas stpsum, ",
-            "link": "View in Github"
+            "link": "View in Github",
+            "github_link": "https://github.com/lucasuk89/RestaurantGericht"
         },
 
         {
             "id":2,
-            "src":"./img/placeholder-image-1.png",
+            "src":"./img/spotify.png",
             "title":"App Dashboard",
             "description":"Lorem ipsum, dolorconceateryeauhuas steste",
-            "link": "View in Github"
+            "link": "View in Github",
+            "github_link": "https://github.com/lucasuk89/ProjetoSpotify"
         },
 
         {
@@ -51,7 +53,8 @@
             "src":"./img/placeholder-image-2.png",
             "title":"Easy rent",
             "description":"Lorem ipsum, dolorconceateryeauhuas steste",
-            "link": "View in Github"
+            "link": "View in Github",
+            "github_link": "https://github.com/lucasuk89/apeparia"
         }
     ],
 
