@@ -17,15 +17,15 @@
         {
             "id":3,
             "src":"./img/feather-pen-2.png",
-            "title":"Ux & UI Design",
+            "title":"Ux & UI Design/ Figma",
             "description":"Designing and implementing user-friendly interfaces, collaborating with developers."
         },
 
         {
             "id":4,
             "src":"./img/feather-pen-1.png",
-            "title":"Webflow Development",
-            "description":"Lorem ipsum, dolorconceateryeauhuas steste"
+            "title":"Programming Languages",
+            "description":"Javascript/React & Studying Java"
         }
     ],
 
