@@ -51,39 +51,11 @@
         {
             "id":3,
             "src":"./img/apeparia.png",
-            "title":"Easy rent",
+            "title":"Web Browser App Services",
             "description":"Build with Html/Css",
             "link": "View in Github",
             "github_link": "https://github.com/lucasuk89/apeparia"
         }
-    ],
-
-    "testimonial":[
-        {
-            "id":1,
-            "count":"5",
-            "src":"./img/avatar-image.png",
-            "description":"Lorem ipsum, dolorconceateryeauhuas stpsum",
-            "author_name":"Diane Ruseel",
-            "author_designation":"Starbucks"
-        },
-
-        {
-            "id":2,
-            "count":"5",
-            "src":"./img/avatar-image-1.png",
-            "description":"Lorem ipsum, dolorconceateryeauhuas stpsum",
-            "author_name":"Kristin watson",
-            "author_designation":"Louis vuitoin"
-        },
-
-        {
-            "id":3,
-            "count":"5",
-            "src":"./img/avatar-image-2.png",
-            "description":"Lorem ipsum, dolorconceateryeauhuas stpsum",
-            "author_name":"Paul jones",
-            "author_designation":"Mcdonads"
-        }
     ]
+
 }
