@@ -34,7 +34,7 @@
             "id":1,
             "src":"./img/restaurant.png",
             "title":"Restaurant Gerich",
-            "description":"Lorem ipsum, dolorconceateryeauhuas stpsum, ",
+            "description":"Built with Javascript/React",
             "link": "View in Github",
             "github_link": "https://github.com/lucasuk89/RestaurantGericht"
         },
@@ -42,17 +42,17 @@
         {
             "id":2,
             "src":"./img/spotify.png",
-            "title":"App Dashboard",
-            "description":"Lorem ipsum, dolorconceateryeauhuas steste",
+            "title":"Spotify Prototype Project",
+            "description":"Build with Html/Css",
             "link": "View in Github",
             "github_link": "https://github.com/lucasuk89/ProjetoSpotify"
         },
 
         {
             "id":3,
-            "src":"./img/placeholder-image-2.png",
+            "src":"./img/apeparia.png",
             "title":"Easy rent",
-            "description":"Lorem ipsum, dolorconceateryeauhuas steste",
+            "description":"Build with Html/Css",
             "link": "View in Github",
             "github_link": "https://github.com/lucasuk89/apeparia"
         }
