@@ -3,6 +3,7 @@ import MySkills from "../MySkills";
 import AboutMe from "../AboutMe";
 import MyPortfolio from "../MyPortfolio";
 import Objectives from "../Objectives";
+import Design from "../Design";
 import ContactMe from "../ContactMe";
 import Footer from "../Footer";
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutMe />
       <MyPortfolio />
       <Objectives />
+      <Design />
       <ContactMe />
       <Footer />
     </>

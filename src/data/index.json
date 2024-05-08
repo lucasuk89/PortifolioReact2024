@@ -56,6 +56,36 @@
             "link": "View in Github",
             "github_link": "https://github.com/lucasuk89/apeparia"
         }
+    ],
+
+    "design":[
+        {
+            "id":1,
+            "src":"./img/freshdeliapp.png",
+            "title":"Fresh Deli App",
+            "description":"Sustainable Food App for Local Commerce",
+            "link": "View in Figma",
+            "figma_link": "https://www.figma.com/file/wj1OyIc5cvCU0gfzldRa1p/FRESHDELI---Presentaci%C3%B3n?type=design&node-id=616%3A6180&mode=design&t=EyqTdEjKJpi1IKBz-1"
+        },
+
+        {
+            "id":2,
+            "src":"./img/bloodrunning.png",
+            "title":"Blood Running Save Lives",
+            "description":"Build with Html/Css",
+            "link": "View in Figma",
+            "figma_link": "https://www.figma.com/file/qymRKcavmjFB8P7VlPdeym/Blood-Running---Convocat%C3%B3ria-2?type=design&node-id=367%3A962&mode=design&t=jlU2qcBMQ6Buy6zi-1"
+        },
+
+        {
+            "id":3,
+            "src":"./img/apeparia.png",
+            "title":"Web Browser App Services",
+            "description":"Build with Html/Css",
+            "link": "View in Github",
+            "figma_link": "https://github.com/lucasuk89/apeparia"
+        }
     ]
+    
 
 }
