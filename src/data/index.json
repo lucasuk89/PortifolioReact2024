@@ -70,7 +70,7 @@
 
         {
             "id":2,
-            "src":"./img/bloodrunning.png",
+            "src":"./img/blood.png",
             "title":"Blood Running Save Lives",
             "description":"Build with Html/Css",
             "link": "View in Figma",
@@ -79,7 +79,7 @@
 
         {
             "id":3,
-            "src":"./img/apeparia.png",
+            "src":"./img/pizzaria.png",
             "title":"Web Browser App Services",
             "description":"Build with Html/Css",
             "link": "View in Github",
