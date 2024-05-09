@@ -1,4 +1,44 @@
+import React, { useState } from "react";
+
 export default function ContactMe() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phoneNumber: "",
+    topic: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Email enviado com sucesso!");
+      } else {
+        console.error("Erro ao enviar email");
+      }
+    } catch (error) {
+      console.error("Erro ao enviar o email", error);
+    }
+  };
+
   return (
     <section id="Contact" className="contact--section">
       <div className="sub--title">
