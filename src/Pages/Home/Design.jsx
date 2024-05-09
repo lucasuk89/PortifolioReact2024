@@ -2,7 +2,10 @@ import data from "../../data/index.json";
 
 export default function Design() {
   const handleFigma = () => {
-    window.open("https://github.com/lucasuk89", "_blank");
+    window.open(
+      "https://www.figma.com/design/IMGPOWolEmk9moUMtWMqEM/Untitled?t=F1JfyBZIrL8jFVzQ-0",
+      "_blank"
+    );
   };
 
   const handleFigmaProject = (figma_link) => {
@@ -25,7 +28,7 @@ export default function Design() {
               viewBox="0 0 33 33"
               fill="none"
               onClick={handleFigma}
-              style={{ cursor: "pointer" }} // Adicionando estilo para mostrar cursor de mão
+              style={{ cursor: "pointer" }}
             >
               <path
                 fillRule="evenodd"
@@ -34,7 +37,7 @@ export default function Design() {
                 fill="currentColor"
               />
             </svg>
-            Visit My Figma
+            Figma : Old project to New
           </button>
         </div>
       </div>
@@ -54,9 +57,9 @@ export default function Design() {
                 <p
                   className="text-sm portfolio--link"
                   onClick={() => handleFigmaProject(item.figma_link)}
-                  style={{ cursor: "pointer" }} // Adicionando estilo para mostrar cursor de mão
+                  style={{ cursor: "pointer" }}
                 >
-                  View in Github
+                  View in Figma
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -64,7 +67,7 @@ export default function Design() {
                     viewBox="0 0 20 19"
                     fill="none"
                     onClick={() => handleFigmaProject(item.figma_link)}
-                    style={{ cursor: "pointer" }} // Adicionando estilo para mostrar cursor de mão
+                    style={{ cursor: "pointer" }}
                   >
                     <path
                       d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
