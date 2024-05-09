@@ -473,6 +473,15 @@ input[type="checkbox"] {
 
 /* Footer Start */
 /* Footer Starts */
+.lucasDevFooter{
+  max-width:200px;
+  max-height:150px;
+  width: auto;
+  height: auto;max-width:200px;
+  max-height:50px;
+  width: auto;
+  height: auto;
+}
 .footer--container {
   display: flex;
   padding: 106.667px 85.333px;
@@ -494,6 +503,7 @@ input[type="checkbox"] {
   align-items: flex-start;
   gap: 42.667px;
   text-decoration: none;
+  cursor: pointer;
 }
 .footer--items ul > li > a {
   text-decoration: none;

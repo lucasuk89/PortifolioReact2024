@@ -6,7 +6,11 @@ function Footer() {
     <footer className="footer--container">
       <div className="footer--link--container">
         <div>
-          <img src="./img/logo.svg" alt="Logoipsum" />
+          <img
+            src="img/Lucasdev.png"
+            className="lucasDevFooter"
+            alt="Logoipsum"
+          />
         </div>
         <div className="footer--items">
           <ul>
@@ -69,10 +73,10 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="testimonial"
+                to="objectives"
                 className="text-md"
               >
-                Testimonials
+                Objectives
               </Link>
             </li>
           </ul>
