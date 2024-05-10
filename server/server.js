@@ -21,10 +21,6 @@ const transporter = nodemailer.createTransport({
 app.post("/send-email", (req, res) => {
   const { firstName, lastName, email, phoneNumber, topic, message } = req.body;
 
-  app.get("/", (req, res) => {
-    res.send("Hello World!"); // Exemplo de resposta para solicitação GET para o endpoint raiz
-  });
-
   const mailOptions = {
     from: "SEU_EMAIL@gmail.com",
     to: "lucasuk89@gmail.com",
