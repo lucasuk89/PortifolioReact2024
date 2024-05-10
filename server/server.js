@@ -1,26 +1,32 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const cors = require("cors");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cors());
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "lucasuk89@gmail.com",
-    pass: "atvance123",
+    pass: "uizwovgvbermejrz",
   },
 });
 
 app.post("/send-email", (req, res) => {
   const { firstName, lastName, email, phoneNumber, topic, message } = req.body;
 
+  app.get("/", (req, res) => {
+    res.send("Hello World!"); // Exemplo de resposta para solicitação GET para o endpoint raiz
+  });
+
   const mailOptions = {
-    from: "SEU_EMAIL@gmail.come",
+    from: "SEU_EMAIL@gmail.com",
     to: "lucasuk89@gmail.com",
     subject: "Novo contato recebido",
     html: `
@@ -40,6 +46,7 @@ app.post("/send-email", (req, res) => {
     } else {
       console.log("E-mail recebido" + info.response);
       res.status(200).send("E-mail sent with sucess");
+      alert("Your email has been sent");
     }
   });
 });
