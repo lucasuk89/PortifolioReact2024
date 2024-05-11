@@ -1,3 +1,6 @@
+import React from "react";
+import { scrollToContact } from "./Component/getInTouch";
+
 export default function () {
   return (
     <section id="heroSection" className="hero--section">
@@ -12,7 +15,12 @@ export default function () {
             <br />I seek to turn ideas into digital solutions.
           </p>
         </div>
-        <button className="btn btn-primary">Get in Touch</button>
+        <button
+          className="btn btn-primary"
+          onClick={() => scrollToContact("Contact")}
+        >
+          Get in Touch
+        </button>
       </div>
       <div className="hero--section--img">
         <img src="./img/persona.png" alt="Hero Section" />
