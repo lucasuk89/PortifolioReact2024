@@ -1,5 +1,3 @@
-import HeroSection from "../HeroSection";
-
 export function scrollToContact(Contact) {
   const section = document.getElementById(Contact);
   if (section) {
