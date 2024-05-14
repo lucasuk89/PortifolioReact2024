@@ -10,16 +10,20 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: "lucasuk89@gmail.com",
-    pass: "uizwovgvbermejrz",
-  },
-});
-
 app.post("/send-email", (req, res) => {
   const { firstName, lastName, email, phoneNumber, topic, message } = req.body;
+
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "lucasuk89@gmail.com",
+      pass: "uizwovgvbermejrz",
+    },
+    secure: true,
+    tls: {
+      rejectUnauthorized: false,
+    },
+  });
 
   const mailOptions = {
     from: "SEU_EMAIL@gmail.com",
@@ -42,7 +46,6 @@ app.post("/send-email", (req, res) => {
     } else {
       console.log("E-mail recebido" + info.response);
       res.status(200).send("E-mail sent with sucess");
-      alert("Your email has been sent");
     }
   });
 });

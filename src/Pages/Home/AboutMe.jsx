@@ -12,10 +12,11 @@ export default function AboutMe() {
             Hey everyone!
             <br />
             <br />
-            I'm a guy who's all about the good stuff in life: traveling, gaming,
-            and kicking a ball around on the field. <br />
-            Whether it's soccer or any other sport, count me in—I'm always up
-            for trying something new.
+            I enjoy reading books, playing video games, and soccer. I'm always
+            eager to learn a new sport or activity. I've already completed 4
+            half marathons and consider running as a sport that makes us use our
+            minds to achieve our goals.
+            <br />
           </p>
           <p className="hero--section--description">
             I'm someone who loves to interact both in the workplace and beyond.
