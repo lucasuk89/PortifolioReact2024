@@ -10,9 +10,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "https://www.lucasfmdev.com", // Adicione o domínio do seu site aqui
+    origin: "https://www.lucasfmdev.com", 
   })
 );
+
+app.options("/send-email", cors());
 
 app.post("/send-email", (req, res) => {
   const { firstName, lastName, email, phoneNumber, topic, message } = req.body;
