@@ -8,7 +8,11 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://www.lucasfmdev.com", // Adicione o domínio do seu site aqui
+  })
+);
 
 app.post("/send-email", (req, res) => {
   const { firstName, lastName, email, phoneNumber, topic, message } = req.body;
