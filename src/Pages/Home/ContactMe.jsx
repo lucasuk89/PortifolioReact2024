@@ -21,7 +21,7 @@ export default function ContactMe() {
     e.preventDefault();
 
     try {
-      const response = await fetch("/send-email", {
+      const response = await fetch("https://www.lucasfmdev.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
