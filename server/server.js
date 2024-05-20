@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
+require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -16,8 +17,8 @@ app.post("/send-email", (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "lucasuk89@gmail.com",
-      pass: "uizwovgvbermejrz",
+      user: process.env.EMAIL.USER,
+      pass: process.env.EMAIL_PASS,
     },
     secure: true,
     tls: {
@@ -26,8 +27,8 @@ app.post("/send-email", (req, res) => {
   });
 
   const mailOptions = {
-    from: "SEU_EMAIL@gmail.com",
-    to: "lucasuk89@gmail.com",
+    from: process.env.EMAIL_USER,
+    to: process.env.EMAIL_TO,
     subject: "Novo contato recebido",
     html: `
       <p>New contact received:</p>
