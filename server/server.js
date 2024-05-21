@@ -11,16 +11,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.post("/send-email", (req, res) => {
+app.post("https://www.lucasfmdev.com", (req, res) => {
   const { firstName, lastName, email, phoneNumber, topic, message } = req.body;
 
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "mailout.one.com",
+    port: 587,
+    secure: "false",
     auth: {
-      user: process.env.EMAIL.USER,
+      user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
     },
-    secure: true,
     tls: {
       rejectUnauthorized: false,
     },
@@ -42,7 +43,7 @@ app.post("/send-email", (req, res) => {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.log(error);
+      console.log("Error ao enviar email", error);
       res.status(500).send("Error sending the email");
     } else {
       console.log("E-mail recebido" + info.response);
