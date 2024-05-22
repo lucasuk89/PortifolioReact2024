@@ -11,13 +11,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.post("https://www.lucasfmdev.com", (req, res) => {
+app.post("/contact", (req, res) => {
   const { firstName, lastName, email, phoneNumber, topic, message } = req.body;
 
   const transporter = nodemailer.createTransport({
     host: "mailout.one.com",
     port: 587,
-    secure: "false",
+    secure: false,
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
@@ -43,11 +43,11 @@ app.post("https://www.lucasfmdev.com", (req, res) => {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.log("Error ao enviar email", error);
+      console.log("Error sending email", error);
       res.status(500).send("Error sending the email");
     } else {
-      console.log("E-mail recebido" + info.response);
-      res.status(200).send("E-mail sent with sucess");
+      console.log("E-mail sent" + info.response);
+      res.status(200).send("E-mail sent successfully");
     }
   });
 });

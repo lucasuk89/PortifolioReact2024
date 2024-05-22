@@ -8,12 +8,14 @@ export default function ContactMe() {
     phoneNumber: "",
     topic: "",
     message: "",
+    checkbox: false,
   });
 
   const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: type === "checkbox" ? checked : value,
     });
   };
 
@@ -21,7 +23,7 @@ export default function ContactMe() {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://www.lucasfmdev.com", {
+      const response = await fetch("/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
